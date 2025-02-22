@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocabulary Quiz</title>
+  <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar" class="sidebar closed" style="display: none;">
+      <button id="toggle-sidebar" onclick="toggleSidebar()">☰</button>
+      <div class="sidebar-content">
+        <h2 class="sidebar-title">Categories</h2>
+        <ul id="sidebar-categories">
+          <li><button onclick="startQuizWithCategory('people')">People</button></li>
+          <li><button onclick="startQuizWithCategory('home')">Home</button></li>
+          <li><button onclick="startQuizWithCategory('school')">School</button></li>
+          <li><button onclick="startQuizWithCategory('work')">Work</button></li>
+          <li><button onclick="startQuizWithCategory('life')">Life</button></li>
+          <li><button onclick="startQuizWithCategory('food')">Food</button></li>
+          <li><button onclick="startQuizWithCategory('shopping')">Shopping</button></li>
+          <li><button onclick="startQuizWithCategory('travels')">Travels</button></li>
+          <li><button onclick="startQuizWithCategory('culture')">Culture</button></li>
+          <li><button onclick="startQuizWithCategory('sport')">Sport</button></li>
+          <li><button onclick="startQuizWithCategory('health')">Health</button></li>
+          <li><button onclick="startQuizWithCategory('science')">Science</button></li>
+          <li><button onclick="startQuizWithCategory('nature')">Nature</button></li>
+          <li><button onclick="startQuizWithCategory('politics')">Politics</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <header>
+        <h1>Vocabulary Quiz</h1>
+      </header>
+      <div id="category-selection" class="view">
+        <h2>Choose vocabulary category</h2>
+        <ul id="categories-list">
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('people')">People</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('home')">Home</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('school')">School</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('work')">Work</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('life')">Life</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('food')">Food</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('shopping')">Shopping</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('travels')">Travels</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('culture')">Culture</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('sport')">Sport</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('health')">Health</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('science')">Science</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('nature')">Nature</button>
+          </li>
+          <li>
+            <button class="category-btn" onclick="startQuizWithCategory('politics')">Politics</button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="quiz-view" class="view" style="display: none;">
+        <div id="quiz-container"></div>
+        <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/frontend/script.js"></script>
+</body>
+</html>
