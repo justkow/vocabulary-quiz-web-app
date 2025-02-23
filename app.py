@@ -16,6 +16,10 @@ def load_words():
 def index():
     return send_from_directory('frontend', 'index.html')
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('.', 'favicon.ico', mimetype='image/x-icon')
+
 @app.route('/frontend/<path:filename>')
 def static_files(filename):
     return send_from_directory('frontend', filename)
