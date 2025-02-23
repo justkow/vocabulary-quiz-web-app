@@ -17,6 +17,8 @@ The Vocabulary Quiz Web App is designed to help users enhance their vocabulary t
     ```bash
     cd vocabulary-quiz-web-app
     ```
+
+#### Option 1: Run Locally with Python
 3. Install dependencies:
     ```bash
     pip3 install flask requests
@@ -25,6 +27,17 @@ The Vocabulary Quiz Web App is designed to help users enhance their vocabulary t
     ```bash
     python3 app.py
     ```
+
+#### Option 2: Run with Docker
+3. Build the Docker image:
+    ```bash
+    docker build -t quiz-app .
+    ```
+4. Start the Docker container:
+    ```bash
+    docker run -d -p 5000:5000 --name quiz-app quiz-app
+    ```
+
 5. Open your browser and go to `http://127.0.0.1:5000`
 
 ## Screenshots
