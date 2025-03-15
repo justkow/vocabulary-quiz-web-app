@@ -44,7 +44,7 @@ function renderQuiz(quizData) {
     quizContainer.innerHTML += `
       <div class="quiz-item" id="quiz-item-${word.id}">
         <p>${index + 1}. ${word.word}</p>
-        <input type="text" id="answer-${word.id}" placeholder="Enter translation">
+        <input type="text" id="answer-${word.id}" placeholder="Enter translation" autocomplete="off">
         <span class="feedback"></span>
       </div>
     `;
