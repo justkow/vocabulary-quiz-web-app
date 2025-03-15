@@ -23,7 +23,7 @@ The Vocabulary Quiz Web App is designed to help users enhance their vocabulary t
     ```bash
     pip3 install flask requests
     ```
-4. Start the application:
+4. In the `app.py` file, in the last line of code, change the address from `0.0.0.0` to `127.0.0.1`. Then start the application:
     ```bash
     python3 app.py
     ```
@@ -35,7 +35,7 @@ The Vocabulary Quiz Web App is designed to help users enhance their vocabulary t
     ```
 4. Start the Docker container:
     ```bash
-    docker run -d -p 5000:5000 --name quiz-app quiz-app
+    docker run -d -p 127.0.0.1:5000:5000 --name quiz-app quiz-app
     ```
 
 5. Open your browser and go to `http://127.0.0.1:5000`
