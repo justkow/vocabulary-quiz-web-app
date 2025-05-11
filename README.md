@@ -11,7 +11,7 @@ The Vocabulary Quiz Web App is designed to help users enhance their vocabulary t
 ### Steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/pangandalf/vocabulary-quiz-web-app.git
+    git clone https://github.com/justkow/vocabulary-quiz-web-app.git
     ```
 2. Navigate to the project directory:
     ```bash
